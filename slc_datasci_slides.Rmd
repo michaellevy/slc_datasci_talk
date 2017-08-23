@@ -78,7 +78,7 @@ data_frame(Nodes = c("People", "Computers", "Cities", "Proteins", "Functions"),
 
 ```
 
-# A few real-world examples...
+# A few real-world examples
 
 ## Facebook Friendships { .white }
 
@@ -452,7 +452,9 @@ visNetwork(nodes, edges) %>%
 
 ## More
 
-- For a comprehensive tool list, see the curated Awesome Network Analysis list: https://github.com/briatte/awesome-network-analysis
+- For a comprehensive list of tools, see the curated Awesome Network Analysis list: https://github.com/briatte/awesome-network-analysis
+- These slides, with some R code: https://github.com/michaellevy/slc_datasci_talk
 - Feel free to get in touch with me: 
-    - Twitter: @ucdlevy
-    - GitHub: @michaellevy
+    - @ucdlevy
+    - michael.levy@healthcatalyst.com
+    
