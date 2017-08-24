@@ -37,7 +37,11 @@ SLC Data Science Meetup
 1. What is a network?
 1. Real-world examples
 1. Network statistics
-1. Real-world analyses
+1. Four case studies
+    1. Descriptive statistics
+    1. Conditional uniform random graph tests
+    1. Network autocorrelation models
+    1. Exponential random graph models
 1. Tools
 
 ## What makes a network?
@@ -65,7 +69,7 @@ data_frame(Points = c("nodes", "vertices", "actors"),
 </p>
 </div>
 
-## Some examples of networks
+## Example networks
 
 ```{r examples, results = "asis"}
 data_frame(Nodes = c("People", "Computers", "Cities", "Proteins", "Functions"),
@@ -78,7 +82,7 @@ data_frame(Nodes = c("People", "Computers", "Cities", "Proteins", "Functions"),
 
 ```
 
-# A few real-world examples
+# Real-world examples
 
 ## Facebook Friendships { .white }
 
@@ -154,7 +158,7 @@ include_graphics("https://images.nature.com/w926/nature-assets/srep/2016/160118/
 
 ## Code Profiling
 
-<img src="fastProfileCallsGraph.pdf" class="cover">
+<img src="Screenshot 2017-08-23 17.24.36.png" class="cover">
 
 # Individual level statistics
 
@@ -308,13 +312,16 @@ plot(floN, vertex.cex = 3, vertex.col = "darkblue", coord = co,
 
 ## Variations
 
-> - Valued/count edges
-> - Directed edges
-> - Bipartite networks
-> - Trees
-> - Dynamic networks
-> - Dynamics on networks
+> - Special Cases
+>     - Trees
+>     - Bipartite networks
 
+> - Generalizations
+>     - Valued/count edges
+>     - Directed edges
+>     - Dynamic networks
+>     - Dynamics on networks
+    
 ## Case Studies
 
 1. Viticulture management: Descriptive statistics
@@ -327,20 +334,20 @@ plot(floN, vertex.cex = 3, vertex.col = "darkblue", coord = co,
 ## Three regional networks, three professional categories
 
 ```{r, out.width="100%"}
-include_graphics("Fig1.tiff")
+include_graphics("Fig1.png")
 ```
 
-## Outreach professionals who grow are in charge
+## Outreach professionals who grow control information flow
 
 ```{r, out.width = "60%"}
-include_graphics("Fig2.tiff")
+include_graphics("Fig2.png")
 ```
 
 # Mental models of sustainable agriculture
 
 ## Network of perceived causal relationships
 
-```{r, out.height = "100%"}
+```{r, out.height = "70%"}
 include_graphics("Screenshot 2017-08-23 03.06.51.png")
 ```
 
@@ -453,7 +460,7 @@ visNetwork(nodes, edges) %>%
 ## More
 
 - For a comprehensive list of tools, see the curated Awesome Network Analysis list: https://github.com/briatte/awesome-network-analysis
-- These slides, with some R code: https://github.com/michaellevy/slc_datasci_talk
+- These slides, including some R code: https://github.com/michaellevy/slc_datasci_talk
 - Feel free to get in touch with me: 
     - @ucdlevy
     - michael.levy@healthcatalyst.com
